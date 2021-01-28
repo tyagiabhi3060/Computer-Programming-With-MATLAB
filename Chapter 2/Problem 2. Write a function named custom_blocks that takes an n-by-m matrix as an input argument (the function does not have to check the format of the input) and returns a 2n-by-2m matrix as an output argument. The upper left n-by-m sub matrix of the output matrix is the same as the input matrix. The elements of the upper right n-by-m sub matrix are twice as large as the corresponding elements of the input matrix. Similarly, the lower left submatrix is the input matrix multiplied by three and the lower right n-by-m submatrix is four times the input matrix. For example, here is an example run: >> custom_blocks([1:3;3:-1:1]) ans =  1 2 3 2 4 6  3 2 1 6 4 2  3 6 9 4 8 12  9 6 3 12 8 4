@@ -1,0 +1,7 @@
+function custom_block(A)
+    [x y]=size(A);
+    P=A;
+    A(1:x,y+1:2*y)=2*A;
+    A(x+1:2*x,1:y)=3*P;
+    A(x+1:2*x,y+1:2*y)=4*P
+end
