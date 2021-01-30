@@ -1,0 +1,4 @@
+function Z=sum_rows(A)
+    Z=A';
+    Z=sum(Z);
+end
