@@ -1,0 +1,5 @@
+function [x, y]=maxmin_rows(A)
+    Z=A';
+   x=max(Z);
+   y=min(Z);
+end
