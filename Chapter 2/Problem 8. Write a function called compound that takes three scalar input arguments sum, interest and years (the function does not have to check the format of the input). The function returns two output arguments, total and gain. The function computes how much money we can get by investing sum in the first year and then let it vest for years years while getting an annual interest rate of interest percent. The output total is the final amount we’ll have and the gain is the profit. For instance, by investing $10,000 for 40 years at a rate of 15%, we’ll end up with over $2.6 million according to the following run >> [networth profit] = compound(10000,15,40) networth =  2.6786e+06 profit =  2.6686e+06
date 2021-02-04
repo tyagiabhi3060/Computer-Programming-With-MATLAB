@@ -1,0 +1,6 @@
+function [total, gain]=compound(p,r,t)
+    r=r/100;
+    n=1;
+    total=p*((1+(r/n))^(n*t));
+    gain=total-p;
+end
