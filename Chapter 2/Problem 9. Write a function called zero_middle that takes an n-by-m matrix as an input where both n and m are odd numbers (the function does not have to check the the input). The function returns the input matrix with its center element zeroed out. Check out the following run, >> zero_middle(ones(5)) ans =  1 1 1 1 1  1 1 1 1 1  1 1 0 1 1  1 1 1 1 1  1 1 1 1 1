@@ -1,0 +1,5 @@
+function A=zero_middle(Z)
+    [n, m]=size(Z);
+    Z((n+1)/2,(m+1)/2)=0;
+    A=Z;
+end
