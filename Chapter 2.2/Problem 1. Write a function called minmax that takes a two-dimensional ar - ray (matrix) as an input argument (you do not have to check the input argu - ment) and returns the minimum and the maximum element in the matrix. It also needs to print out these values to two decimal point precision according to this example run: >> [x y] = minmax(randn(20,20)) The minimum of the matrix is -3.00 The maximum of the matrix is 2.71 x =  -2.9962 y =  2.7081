@@ -1,0 +1,6 @@
+function [x, y]=minmax(A)
+    x=max(A(:));
+    y=min(A(:));
+    fprintf('The minimum value of the matrix is %.2f\n',y)
+    fprintf('The maximum value of the matrix is %.2f',x)
+end
