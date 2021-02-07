@@ -1,0 +1,6 @@
+function A=cancel_middle(Z,x)
+    [n,m]=size(Z);
+    p=(((x+1)/2)-1);
+    Z(((n+1)/2)-p:((n+1)/2)+p,((m+1)/2)-p:((m+1)/2)+p) = 0;
+    A=Z;
+    end
