@@ -1,0 +1,5 @@
+function a=my_size(A)
+    [x, y]=size(A);
+    fprintf('This is a %d-by-%d matrix',x,y)
+    a=size(A);
+end
