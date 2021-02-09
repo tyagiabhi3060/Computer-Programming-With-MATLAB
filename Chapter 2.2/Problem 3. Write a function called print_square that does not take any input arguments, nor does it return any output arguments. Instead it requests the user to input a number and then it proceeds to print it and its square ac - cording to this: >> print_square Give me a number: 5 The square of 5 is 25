@@ -1,0 +1,5 @@
+function print_square
+    x=input('Gimme a number');
+    y=x^2;
+    fprintf('The square of %d is %d',x,y);
+end
