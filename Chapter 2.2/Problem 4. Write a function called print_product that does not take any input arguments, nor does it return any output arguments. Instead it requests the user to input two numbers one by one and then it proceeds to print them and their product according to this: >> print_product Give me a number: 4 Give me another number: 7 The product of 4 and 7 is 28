@@ -1,0 +1,6 @@
+function print_product
+    x=input('Gimme a number');
+    y=input('Gimme a second number');
+    z=x*y;
+    fprintf('The product of %d and %d is %d',x,y,z);
+end
