@@ -1,0 +1,4 @@
+function [m,v]=randi_test(maxi,n)
+    v=randi(maxi,n);
+    m=v(:)';
+end
