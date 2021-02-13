@@ -1,0 +1,4 @@
+function uniform_hist(n,bins)
+    x=rand(1,n);
+    hist(x,(bins/50));
+end
