@@ -1,0 +1,8 @@
+function A = two_rows(A)
+nd = ndims(A);
+[nrows,~] = size(A);
+if nd ~= 2 || nrows ~= 2
+   fprintf('I must two dimensions and two rows!\n');
+   A = 0*A;
+end
+   
