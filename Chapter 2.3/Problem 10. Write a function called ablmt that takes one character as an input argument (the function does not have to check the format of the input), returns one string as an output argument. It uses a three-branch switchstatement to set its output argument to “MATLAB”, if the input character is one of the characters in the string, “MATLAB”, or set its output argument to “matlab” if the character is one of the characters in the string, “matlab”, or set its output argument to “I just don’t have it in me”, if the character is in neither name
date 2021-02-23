@@ -1,0 +1,10 @@
+function ablmt(c)
+    switch c
+        case {'M' 'A' 'T' 'L' 'B'}
+            fprintf("MATLAB");
+        case {'m' 'a' 't' 'l' 'b'}
+            fprintf("matlab");
+        otherwise
+            fprintf("I just don't have in me");
+    end
+end
