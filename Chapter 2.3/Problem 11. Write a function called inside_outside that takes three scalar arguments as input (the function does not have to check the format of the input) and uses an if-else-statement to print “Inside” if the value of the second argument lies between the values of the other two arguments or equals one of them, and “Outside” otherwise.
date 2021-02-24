@@ -1,0 +1,6 @@
+function inside_outside(a,b,c)
+if (b >= a && b <= c) || (b <= a && b >= c)
+   fprintf('Inside\n')
+else
+   fprintf('Outside\n')
+end
