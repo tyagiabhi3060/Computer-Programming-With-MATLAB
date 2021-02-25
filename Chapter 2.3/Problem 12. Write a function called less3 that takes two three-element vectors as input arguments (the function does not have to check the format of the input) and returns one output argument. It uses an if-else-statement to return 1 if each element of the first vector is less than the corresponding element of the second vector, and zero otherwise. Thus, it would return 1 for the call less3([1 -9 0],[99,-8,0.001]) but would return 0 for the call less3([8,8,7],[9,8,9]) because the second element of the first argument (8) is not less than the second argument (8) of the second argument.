@@ -1,0 +1,8 @@
+function a=less3(x,y)
+    
+    if x<y
+        a=true;
+    else
+        a=false;
+    end
+end
