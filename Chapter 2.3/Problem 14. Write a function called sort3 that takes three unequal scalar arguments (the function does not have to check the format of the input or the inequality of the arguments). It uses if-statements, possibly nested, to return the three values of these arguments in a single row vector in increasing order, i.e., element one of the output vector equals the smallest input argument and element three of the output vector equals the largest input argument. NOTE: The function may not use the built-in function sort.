@@ -1,0 +1,21 @@
+function x=sort3(p,q,r)
+    if p<q && p<r
+        if q<r
+            x=[p q r];
+        else
+            x=[p r q];
+        end
+    elseif q<p && q<r
+        if p<r
+            x=[q p r];
+        else
+            x=[q r p];
+        end
+    elseif r<p && r<q
+        if p<q
+            x=[r p q];
+        else
+            x=[r q p];
+        end
+    end 
+    end
