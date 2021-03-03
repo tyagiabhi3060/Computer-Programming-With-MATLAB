@@ -1,0 +1,22 @@
+function day_of_month(n,d,m)
+    p=["first", "second", "third", "fourth", "fifth"];
+    q=["sunday", "monday" ,"tuesday", "wednesday" ,"thrusday", "friday" ,"saturday"];
+    r=["January","february","march","april","may","june","july","august","september","october","november","december"];
+    if n~=fix(n) || d~=fix(d) || m~=fix(m)
+        error('input must be a whole number');
+    end
+    if n>0 && n<6 && d>0 && d<8 && m>0 && m<12
+        fprintf('%s %s of %s',p(n),q(d),r(m));
+    else
+        if n<0 || n>5
+            fprintf('1st argument must be in range 1 to 5\n');
+        end
+        if d<0 || d>7
+            fprintf('2nd Argument must be in range 1 to 7\n');
+            
+        end
+        if m<0 || m>12
+            fprintf('3rd argument must be in range 1 to 12\n');
+        end
+    end
+end
