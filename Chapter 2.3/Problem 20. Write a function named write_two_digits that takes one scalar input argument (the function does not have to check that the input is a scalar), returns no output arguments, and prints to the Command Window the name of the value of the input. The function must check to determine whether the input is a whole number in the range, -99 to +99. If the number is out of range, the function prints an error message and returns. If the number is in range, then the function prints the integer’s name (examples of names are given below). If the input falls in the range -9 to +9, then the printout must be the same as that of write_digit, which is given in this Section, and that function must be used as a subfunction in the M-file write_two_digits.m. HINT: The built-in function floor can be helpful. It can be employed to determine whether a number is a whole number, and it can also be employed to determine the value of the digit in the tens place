@@ -1,0 +1,135 @@
+function write_two_digits(n)
+if n<-99 || n>99
+        fprintf('input must be an integer from -99 to +99');
+end
+    if floor(n)~=n
+        fprintf('Input must be a whole number');
+        return;
+    end
+    if n<0
+        fprintf('minus ');
+    end
+    n=abs(n);
+    m=n;
+   if n>0 && n<10
+        write_digit(n);
+        return;
+   end
+   if n>20
+        n=fix((n/10))*10;
+   end
+   for ii=1:2
+    switch n
+        case 10
+            fprintf('Ten');
+            ii=ii+1; 
+            break;
+        case 11
+            fprintf('Eleven');
+            ii=ii+1; 
+            break;
+        case 12
+            fprintf('Twelve');
+            ii=ii+1; 
+            break;
+        case 13
+            fprintf('Thirteen');
+            ii=ii+1; 
+            break;
+        case 14
+            fprintf('Fourteen');
+            ii=ii+1; 
+            break;
+        case 15
+            fprintf('Fifteen');
+            ii=ii+1; 
+            break;
+        case 16
+            fprintf('Sixteen');
+            ii=ii+1; 
+            break;
+        case 17
+            fprintf('Seventeen');
+            ii=ii+1; 
+            break;
+        case 18
+            fprintf('Eighteen');
+            ii=ii+1; 
+            break;
+        case 19
+            fprintf('Nineteen');
+            ii=ii+1; 
+            break;
+        case 20
+            fprintf('Twenty ');
+            ii=ii+1; 
+            break;
+        case 30
+            fprintf('Thirty ');
+            ii=ii+1;  
+            break;
+        case 40
+            fprintf('Forty ');
+            ii=ii+1;
+            break;
+        case 50
+            fprintf('fifty ');
+            ii=ii+1;
+            break;
+        case 60
+            fprintf('Sixty ');
+            ii=ii+1;
+            break;
+        case 70
+            fprintf('Seventy ');
+            ii=ii+1;
+            break;
+        case 80
+            fprintf('Eighty ');
+            ii=ii+1;
+            break;
+        case 90
+            fprintf('Ninety ');
+            ii=ii+1;
+            break;
+    end
+    break;
+
+    end
+       if ii==1
+              y=m-n;
+              write_digit(y);
+       end
+end
+function write_digit(n)
+if floor(n) ~= n % x is not an integer
+ fprintf(' %f is not an integer',n);
+else
+ if n < 0 || n > 9
+ fprintf('%d is not in the range 1..9',n)
+ else
+ switch n
+ case 1
+ fprintf('one');
+ case 2
+ fprintf('two');
+ case 3
+ fprintf('three');
+ case 4
+ fprintf('four');
+ case 5
+ fprintf('five');
+ case 6
+ fprintf('six');
+ case 7
+ fprintf('seven');
+ case 8
+ fprintf('eight');
+ case 9
+ fprintf('nine');
+     case 0
+         fprintf('Zero');
+ end
+ end
+end
+end
