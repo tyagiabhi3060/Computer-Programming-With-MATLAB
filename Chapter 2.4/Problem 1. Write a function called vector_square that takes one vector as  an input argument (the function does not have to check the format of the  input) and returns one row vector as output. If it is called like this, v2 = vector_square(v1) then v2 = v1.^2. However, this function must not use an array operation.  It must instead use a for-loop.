@@ -1,0 +1,4 @@
+function a = vector_square(x)
+for ii = 1:length(x)
+   a(ii) = x(ii)^2;
+end
