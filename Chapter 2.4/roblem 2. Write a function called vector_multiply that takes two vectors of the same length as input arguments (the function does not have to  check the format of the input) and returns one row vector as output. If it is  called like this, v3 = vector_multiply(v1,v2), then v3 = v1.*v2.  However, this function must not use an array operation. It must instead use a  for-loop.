@@ -1,0 +1,5 @@
+function r=vector_multiply(u,v)
+    for ii=1:length(u)
+        r(ii)=u(ii)*v(ii);
+    end
+end
