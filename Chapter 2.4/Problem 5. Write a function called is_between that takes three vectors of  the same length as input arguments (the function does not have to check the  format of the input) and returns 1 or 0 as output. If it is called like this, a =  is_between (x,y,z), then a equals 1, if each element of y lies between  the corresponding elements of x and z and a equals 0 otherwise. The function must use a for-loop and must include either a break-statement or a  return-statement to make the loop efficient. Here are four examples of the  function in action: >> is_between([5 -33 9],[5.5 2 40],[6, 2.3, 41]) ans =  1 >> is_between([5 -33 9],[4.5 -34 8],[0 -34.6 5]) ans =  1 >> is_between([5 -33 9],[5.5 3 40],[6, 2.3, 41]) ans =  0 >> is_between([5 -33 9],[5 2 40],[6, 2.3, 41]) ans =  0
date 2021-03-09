@@ -1,0 +1,8 @@
+function b = is_between(x,y,z)
+b = true;
+for ii = 1:length(x)
+   if ~((x(ii)<y(ii) && y(ii)<z(ii)) || (x(ii)>y(ii) && y(ii)>z(ii)))
+      b = false;
+      break;
+   end
+end
