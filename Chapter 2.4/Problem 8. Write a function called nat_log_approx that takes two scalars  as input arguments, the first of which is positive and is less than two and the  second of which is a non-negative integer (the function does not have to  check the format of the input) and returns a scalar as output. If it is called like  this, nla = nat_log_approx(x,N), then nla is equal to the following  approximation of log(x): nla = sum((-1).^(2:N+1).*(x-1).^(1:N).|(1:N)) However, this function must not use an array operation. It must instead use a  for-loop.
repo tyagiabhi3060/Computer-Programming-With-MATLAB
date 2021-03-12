@@ -1,0 +1,7 @@
+function a=nat_log_approx(x,n)
+    total=0;
+    for ii=1:n
+        total=total+((-1)^(ii+1)*(x+1)^(ii))/ii ;
+    end
+    a=total;
+end
