@@ -1,0 +1,10 @@
+function point_cloud(n)
+    x=randn(1,n);
+    y=randn(n,1);
+    for ii=1:n
+        plot(x(ii),y(ii),'.k');
+        hold on;
+    end
+    axis([-5 5 -5 5]);
+    hold off;
+end
