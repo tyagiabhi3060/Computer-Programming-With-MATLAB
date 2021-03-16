@@ -1,1 +1,8 @@
-
+function n = steps(d)
+D = 1;
+n = 0; % no steps taken yet
+while D >= d
+   n = n + 1; 
+   D = D - 1/2^n; % take nth step
+end
+   
