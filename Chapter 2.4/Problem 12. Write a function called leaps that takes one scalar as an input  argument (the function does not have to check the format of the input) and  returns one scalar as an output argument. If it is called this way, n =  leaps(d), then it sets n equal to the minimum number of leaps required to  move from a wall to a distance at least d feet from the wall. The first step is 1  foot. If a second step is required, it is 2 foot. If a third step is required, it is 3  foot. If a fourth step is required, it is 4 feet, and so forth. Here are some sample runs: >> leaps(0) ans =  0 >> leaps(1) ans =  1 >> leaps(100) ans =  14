@@ -1,0 +1,10 @@
+function a=leaps(d)
+    a=0;
+    y=0;
+    i=1;
+    while d>y
+        y=y+i;
+        i=i+1;
+        a=a+1;
+    end
+end
