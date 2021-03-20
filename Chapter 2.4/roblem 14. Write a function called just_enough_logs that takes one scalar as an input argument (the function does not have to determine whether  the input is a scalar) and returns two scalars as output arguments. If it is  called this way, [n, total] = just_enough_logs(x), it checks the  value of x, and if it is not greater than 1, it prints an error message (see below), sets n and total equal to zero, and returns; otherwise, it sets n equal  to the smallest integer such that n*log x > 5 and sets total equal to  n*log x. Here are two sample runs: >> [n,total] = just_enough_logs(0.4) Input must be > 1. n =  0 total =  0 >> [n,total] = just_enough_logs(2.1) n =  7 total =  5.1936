@@ -1,0 +1,12 @@
+function [n,total]=just_enough_logs(x)
+    n=0;
+    total=0;
+    if x<1
+        fprintf('input must be >1');
+        return;
+    end
+    while n*log(x)< 5
+        n=n+1;
+        total=n*log(x);
+    end
+end
