@@ -1,0 +1,13 @@
+function guess_my_number
+while 1
+   n = input('Try to guess my number: ');
+   if n < 42
+      fprintf('Higher\n');
+   elseif n > 42
+      fprintf('Lower\n');
+   else
+      fprintf('That''s it!\n');
+      break;
+   end
+end
+   
