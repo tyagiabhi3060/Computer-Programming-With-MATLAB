@@ -1,0 +1,11 @@
+function [a,b,c]=one_so_small
+    while true
+        a=rand;
+        b=rand;
+        c=rand;
+        if b*10<c*a
+            return;
+        end
+            
+    end
+end
