@@ -1,0 +1,18 @@
+function number_pattern
+    y=[];
+     x=input('Please input a number:');
+    while true
+        prev_y=y;
+        y=input('Please input a number(i am looking for a pattern):');
+        if x==y
+            fprintf("That's it.well done!");
+            return;
+        elseif y==prev_y
+            fprintf("That's it.well done!");
+            return;
+        else
+            fprintf("Sorry, that's not what i am looking for.\n");
+        end
+        
+    end
+end
