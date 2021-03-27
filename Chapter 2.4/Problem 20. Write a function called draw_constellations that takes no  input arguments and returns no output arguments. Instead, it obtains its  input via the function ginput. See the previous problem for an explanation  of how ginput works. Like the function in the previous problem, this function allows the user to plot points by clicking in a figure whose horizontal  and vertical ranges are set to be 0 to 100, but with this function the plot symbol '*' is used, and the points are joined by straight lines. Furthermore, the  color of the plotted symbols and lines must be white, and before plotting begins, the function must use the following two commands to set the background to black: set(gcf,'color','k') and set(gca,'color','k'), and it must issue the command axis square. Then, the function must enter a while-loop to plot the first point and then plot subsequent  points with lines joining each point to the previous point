@@ -1,0 +1,23 @@
+function draw_constellations
+    axis([0 100 0 100]);
+    hold on;
+    set(gca,'color','k');
+    set(gcf,'color','k');
+    h = plot(nan, nan, 'w-*'); 
+    axis square;
+     
+    while true
+         a=1;
+
+        [x, y, button]=ginput(a);
+        set(h,'XData', [h.XData, x], 'YData', [h.YData, y]);
+        switch button
+            case 1
+                plot(x,y,'w-');
+            case {'q','Q'}
+                return;
+            case {'n','N'}
+                a=2;
+        end
+    end
+end
