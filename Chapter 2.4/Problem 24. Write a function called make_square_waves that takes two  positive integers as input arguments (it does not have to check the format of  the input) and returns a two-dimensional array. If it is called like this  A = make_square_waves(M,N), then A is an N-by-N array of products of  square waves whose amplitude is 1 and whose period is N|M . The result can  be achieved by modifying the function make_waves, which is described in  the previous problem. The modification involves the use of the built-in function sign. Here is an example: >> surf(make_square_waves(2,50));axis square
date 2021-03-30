@@ -1,0 +1,8 @@
+function A=make_square_waves(M,N)
+    A=zeros(N,N);
+    for ii=1:N
+        for jj=1:N
+            A(ii,jj)=sign(sin(M*2*pi*ii/N))*sign(sin(M*2*pi*jj/N));
+        end
+    end
+end
