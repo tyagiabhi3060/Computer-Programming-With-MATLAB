@@ -1,0 +1,13 @@
+function [v, max_ns]=sine_approx_sequence(u)
+    for ii=1:length(u)
+        v=1;
+        total=1;
+        n=0;
+        while abs(total)>1/1e4
+            n=n+1;
+            total=(((-1)^n)*(u(ii)^(2*n+1)))/factorial(2*n+1);
+            v(ii)=v(ii)+total;
+        end
+        max_ns=n;
+    end
+end
