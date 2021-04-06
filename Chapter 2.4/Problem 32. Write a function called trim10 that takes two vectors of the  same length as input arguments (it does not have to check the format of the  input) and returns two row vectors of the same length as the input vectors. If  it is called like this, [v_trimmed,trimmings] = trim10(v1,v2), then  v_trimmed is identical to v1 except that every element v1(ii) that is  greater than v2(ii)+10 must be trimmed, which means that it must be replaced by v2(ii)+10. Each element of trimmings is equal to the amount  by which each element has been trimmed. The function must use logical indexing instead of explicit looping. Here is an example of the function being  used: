@@ -1,0 +1,9 @@
+function [v_trimmed,trimming]=trim10(v1,v2)
+    v3=v1;
+    v4=v2;
+    
+    v1(v1>(v2+10))=(v2(v1>(v2+10))+10);
+    v_trimmed=v1;
+    
+    trimming=v3-v_trimmed;
+end
