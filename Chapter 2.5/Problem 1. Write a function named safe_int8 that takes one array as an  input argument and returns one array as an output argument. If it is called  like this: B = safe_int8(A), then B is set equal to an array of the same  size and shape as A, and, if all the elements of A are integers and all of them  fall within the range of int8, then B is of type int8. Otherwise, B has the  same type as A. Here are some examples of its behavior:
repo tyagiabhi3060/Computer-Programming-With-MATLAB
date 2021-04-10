@@ -1,0 +1,7 @@
+function A_out = safe_int8(A_in)
+d = max(abs(A_in(:) - fix( A_in(:)))); % maximum fractional part
+if d ~= 0 || min(A_in(:)) < intmin('int8') || max(A_in(:)) > intmax('int8')
+   A_out = A_in; % return the same type
+else
+   A_out = int8(A_in);
+end
