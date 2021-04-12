@@ -1,0 +1,22 @@
+function B=safe_int(A)
+    [x ,y]=size(A);
+    for ii=1 :x
+        for jj=1:y
+            if fix(A(ii,jj))~=A(ii,jj) || A(ii,jj)>=9223372036854775807
+                B=A;
+                return;
+            end
+        end
+    end
+            if max(max(A))<128 && min(min(A))>=-128
+                B=int8(A);
+                return;
+            elseif max(max(A))<=32767 && min(min(A))>=-32767
+                B=int16(A);
+                return;
+            elseif max(max(A))<=2147483647 && min(min(A))>=-2147483648
+                B=int32(A);
+            elseif max(max(A))<9223372036854775807 && min(min(A))>=-9223372036854775808
+                B=int64(A);
+            end
+end
