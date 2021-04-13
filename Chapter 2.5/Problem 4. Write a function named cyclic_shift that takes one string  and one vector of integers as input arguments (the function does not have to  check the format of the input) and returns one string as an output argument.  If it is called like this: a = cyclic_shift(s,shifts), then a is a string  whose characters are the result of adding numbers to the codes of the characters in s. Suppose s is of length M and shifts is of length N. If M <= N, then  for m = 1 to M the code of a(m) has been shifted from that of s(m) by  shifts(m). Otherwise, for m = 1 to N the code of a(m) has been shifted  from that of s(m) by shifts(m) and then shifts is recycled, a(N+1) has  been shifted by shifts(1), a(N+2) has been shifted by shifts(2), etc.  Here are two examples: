@@ -1,0 +1,9 @@
+function a=cyclic_shift(s,v)
+    l1=length(s);
+    l2=length(v);
+
+        for ii=1:l1
+            a(ii)=char(s(ii)+v(ii));
+        end
+        
+end
