@@ -1,0 +1,3 @@
+function  message = odd_shift(message,shift)
+message(1:2:end) = char(message(1:2:end)+shift);
+
